@@ -2,10 +2,11 @@ import React from 'react';
 import styles from './Loading.module.css';
 import cx from 'class-names';
 
-const Loading: React.FC<{ loading: boolean }> = ({ loading }) => {
+const Loading: React.FC<{ loading: boolean, grey?: boolean }> = props => {
+  const { loading, grey } = props;
   return (
     <>
-      <div className={cx(styles["cube-loading-wrapper"], loading && styles.loading)}>
+      <div className={cx(styles["cube-loading-wrapper"], loading && styles.loading, grey && styles.grey)}>
         <div className={styles["cube-loading"]}>
           <div className={styles["front"]}></div>
           <div className={styles["back"]}></div>
@@ -13,6 +14,8 @@ const Loading: React.FC<{ loading: boolean }> = ({ loading }) => {
           <div className={styles["left"]}></div>
           <div className={styles["top"]}></div>
           <div className={styles["bottom"]}></div>
+          {/* <div className={styles["x"]}></div>
+          <div className={styles["y"]}></div> */}
         </div>
       </div>
     </>
