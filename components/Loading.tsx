@@ -14,8 +14,6 @@ const Loading: React.FC<{ loading: boolean, grey?: boolean }> = props => {
           <div className={styles["left"]}></div>
           <div className={styles["top"]}></div>
           <div className={styles["bottom"]}></div>
-          {/* <div className={styles["x"]}></div>
-          <div className={styles["y"]}></div> */}
         </div>
       </div>
     </>
