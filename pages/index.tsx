@@ -18,6 +18,7 @@ const Home: NextPage = () => {
         <ul>
           <li><Link href="/ResponsiveFlexGrid">ResponsiveFlexGrid</Link></li>
           <li><Link href="/CubeLoading">CubeLoading</Link></li>
+          <li><Link href="/Ajax302">Ajax 302</Link></li>
         </ul>
       </main>
 
